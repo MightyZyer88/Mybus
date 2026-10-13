@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mybus</title>
+    <style>
+        img.pic { max-width: 100%; height: auto; border-radius: 8px; margin: 8px 0; }
+        .gallery { display: flex; flex-wrap: wrap; gap: 10px; }
+        .gallery img { width: 220px; height: 220px; object-fit: cover; border-radius: 8px; }
+        /* Navigation bar styling */
+        nav { background-color: rgb(40, 40, 122); padding: 10px; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; font-weight: bold; }
+        /* Table styling */
+        table { border-collapse: collapse; background-color: white; margin: 10px 0; }
+        th, td { border: 1px solid black; padding: 8px; text-align: left; }
+        th { background-color: rgb(33, 33, 92); color: white; }
+    </style>
+</head>
+
+<body style="background-image: url('images/BG-7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;">
+
+<!-- ===== NAVIGATION BAR =====
+     <nav> marks the main navigation links of the page.
+     Links starting with # jump to an element with the matching id on this page. -->
+<nav>
+    <a href="Index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#request">Request</a>
+    <a href="#contact">Contact</a>
+    <a href="SERVICES.html">Services</a>
+</nav>
+
+<h1 id="about" style="background-color: rgb(40, 40, 122); color: white;">About my business</h1>
+<hr>
+<p>My business entiles phones and electric appliances . With over 36 communities served <br> we combine local data with mordern technology to keep our prices low and our services fast <br> secure , NIC- compliant, and built for Ghana.We offer simple affordable protection and business solution for all garget purchased from us and safe delievery. <br>We are a trusted Ghanaian business based in accra <br> dedicated to providing addfordable and reliable services to individual and small businesses <br> Our missision is to deliver quality, transparent , and fast support. </p>
+
+<img class="pic" src="images/02.jpg" alt="Phones and electric appliances" width="500">
+
+<h2 style="background-color: rgb(33, 33, 92); color: white;">Function of my business</h2>
+<p>We buy , sell , and recycle waste and home appliances in accra <br> We offer cash for your old fridges , tv, phones , and computers , plus affordable  refeurbished appliance with warranty <br> We pickup  free and recycle safety - protection ghana from e- waste pollution.</p>
+
+<img class="pic" src="images/07.jpg" alt="E-waste recycling" width="300">
+
+<h3 id="contact" style="background-color: rgb(32, 32, 100); color: white;">CONTACT DETAILS</h3>
+<p><b>Name: Emmanuel Gbotsyo </b><br> Tel: o240534972 <br>Email: emmanuelgboysyo88@gmail.com<br> location:Madina - Firestone <br> other contct: 0503667602</p>
+
+<h4 id="products" style="background-color: rgb(33, 33, 87); color: white;"><marquee direction="right" behavior="alternate">Avaliable Product</marquee></h4>
+<ol>
+    <li><i>laptop</i></li>
+    <li>phones</li>
+    <li>tv</li>
+    <li>charges</li>
+    <li>fridges</li>
+    <li>microwave</li>
+</ol>
+
+<!-- ===== PRODUCT TABLE =====
+     <table> = the table, <tr> = a row, <th> = header cell, <td> = data cell.
+     colspan merges cells across columns; rowspan merges cells down rows. -->
+<table>
+    <!-- Title row: one header cell merged across all 3 columns (colspan) -->
+    <tr>
+        <th colspan="3">Products at a Glance</th>
+    </tr>
+
+    <!-- Column headers -->
+    <tr>
+        <th>Group</th>
+        <th>Product</th>
+        <th>Do we buy your old one?</th>
+    </tr>
+
+    <!-- "Phones &amp; Computers" spans 2 rows (rowspan), so the next row skips the Group cell -->
+    <tr>
+        <td rowspan="2">Phones &amp; Computers</td>
+        <td>Phones</td>
+        <td>Yes - cash for old phones</td>
+    </tr>
+    <tr>
+        <td>Laptop</td>
+        <td>Yes - cash for old computers</td>
+    </tr>
+
+    <!-- "Home Appliances" spans 3 rows -->
+    <tr>
+        <td rowspan="3">Home Appliances</td>
+        <td>TV</td>
+        <td>Yes - cash for old TVs</td>
+    </tr>
+    <tr>
+        <td>Fridges</td>
+        <td>Yes - cash for old fridges</td>
+    </tr>
+    <tr>
+        <td>Microwave</td>
+        <td>Ask us</td>
+    </tr>
+
+    <!-- Accessories -->
+    <tr>
+        <td>Accessories</td>
+        <td>Charges</td>
+        <td>Ask us</td>
+    </tr>
+
+    <!-- Footer note merged across all columns -->
+    <tr>
+        <td colspan="3"><i>Refurbished appliances come with a warranty.</i></td>
+    </tr>
+</table>
+<!-- ===== END PRODUCT TABLE ===== -->
+
+<div class="gallery">
+    <img src="images/06.jpg" alt="Phones, laptops and Apple gadgets">
+    <img src="images/00.jpg" alt="Gadgets and electronics">
+    <img src="images/01.jpg" alt="Speakers and audio">
+    <img src="images/05.jpg" alt="Chargers and accessories">
+</div>
+<br>
+
+<iframe width="200" height="350" src="https://www.youtube.com/embed/zjGmD5BRhKk?si=tCwA0W3k0qgoaGp6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+
+<iframe width="200" height="350" src="https://www.youtube.com/embed/41FToUydIiw?si=6y0h7JoVxDZOjJw4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <br>
+
+<img src="images/08.jpeg" WIDTH="200" HEIGHT="350" alt="Boss">
+<br>
+<!-- ===== REQUEST FORM =====
+     <form> wraps all the inputs. action = where the data is sent ("#" = nowhere for now),
+     method = how it is sent (post keeps the data out of the URL). -->
+<h2 id="request" style="background-color: rgb(33, 33, 92); color: white;"><marquee direction="right" behavior="alternate">Request a Product or Quote</marquee></h2>
+<form action="#" method="post">
+
+    <!-- Text input: the label's "for" matches the input's "id", so clicking the label focuses the box.
+         "name" is the key sent on submit; "required" stops an empty submit. -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="e.g. Kwame Asante" required>
+    <br><br>
+
+    <!-- Another text input for the phone number (maxlength limits the characters typed) -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="text" id="phone" name="phone" placeholder="e.g. 0241234567" maxlength="10" required>
+    <br><br>
+
+    <!-- Password input: typed characters are hidden as dots. minlength = shortest password allowed. -->
+    <label for="password">Create a Password (to track your request):</label><br>
+    <input type="password" id="password" name="password" minlength="6" required>
+    <br><br>
+
+    <!-- Checkboxes: more than one can be ticked.
+         Same "name" for the group, a different "value" for each choice. -->
+    <p>Which products are you interested in?</p>
+    <input type="checkbox" id="laptop" name="product" value="laptop">
+    <label for="laptop">Laptop</label><br>
+
+    <input type="checkbox" id="phones" name="product" value="phones">
+    <label for="phones">Phones</label><br>
+
+    <input type="checkbox" id="tv" name="product" value="tv">
+    <label for="tv">TV</label><br>
+
+    <input type="checkbox" id="chargers" name="product" value="charges">
+    <label for="chargers">Charges</label><br>
+
+    <input type="checkbox" id="fridges" name="product" value="fridges">
+    <label for="fridges">Fridges</label><br>
+
+    <input type="checkbox" id="microwave" name="product" value="microwave">
+    <label for="microwave">Microwave</label>
+    <br><br>
+
+    <!-- "checked" makes this box ticked by default -->
+    <input type="checkbox" id="callme" name="callme" value="yes" checked>
+    <label for="callme">Call me back to confirm</label>
+    <br><br>
+
+    <!-- Submit button: sends the form data to the "action" address -->
+    <input type="submit" value="Send Request">
+</form>
+<!-- ===== END REQUEST FORM ===== -->
+<br>
+<a href="SERVICES.html"><button>click here to see SERVICES WE OFFER</button></a>
+<br><br>
+<iframe src="https://www.google.com/maps?q=5.6712811,-0.1729348&output=embed" width="400" height="300" frameborder="0"></iframe>
+
+</body>
+</html>

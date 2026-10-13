@@ -10,64 +10,206 @@
         .box { width: 260px; background: rgba(255,255,255,0.08); border-radius: 8px; overflow: hidden; }
         .box img { width: 100%; height: 200px; object-fit: cover; display: block; }
         .box p { padding: 0 10px 10px; }
+        /* Navigation bar styling */
+        nav { background-color: rgb(47, 160, 160); padding: 10px; }
+        nav a { color: white; margin-right: 15px; text-decoration: none; font-weight: bold; }
+        /* Table styling (semi-transparent so the background image still shows) */
+        table { border-collapse: collapse; background-color: rgba(0,0,0,0.55); margin: 10px 0; }
+        th, td { border: 1px solid white; padding: 8px; text-align: left; }
+        th { background-color: rgb(47, 160, 160); }
     </style>
 </head>
-<body style="background-color: rgb(32, 32, 97);">
+<body style="background-image: url('images/BG-7.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;">
+
+<!-- ===== NAVIGATION BAR =====
+     <nav> holds the main links. "Home" goes to another page; #links jump to sections on this page. -->
+<nav>
+    <a href="Index.html">Home</a>
+    <a href="#services">Services</a>
+    <a href="#guide">Service Guide</a>
+    <a href="#booking">Book a Service</a>
+</nav>
 
 <a href="Index.html"><button>&larr; Back to Home</button></a>
 <hr>
 <p>Welcome to GEM ELECTRONIS. electronics and dependable home appliances.
-Whether you are setting up a new home in East Legon, modernizing your kitchen in Spintex, <br> or upgrading your office in Ridge, we deliver high-performance appliances built for modern Ghanaian living. <br> 
-From energy-efficient smart refrigerators and inverter air conditioners to top-tier entertainment systems, <br> we bring world-class quality straight to your doorstep—backed by local warranty, <br> competitive prices, and reliable after-sales support right here in Accra </p>
+Whether you are setting up a new home in East Legon, modernizing your kitchen in Spintex, <br> or upgrading your office in Ridge, we deliver high-performance appliances built for modern Ghanaian living. <br> From energy-efficient smart refrigerators and inverter air conditioners to top-tier entertainment systems, <br> we bring world-class quality straight to your doorstep—backed by local warranty, <br> competitive prices, and reliable after-sales support right here in Accra </p>
 
-<h1 style="background-color: rgb(47, 160, 160);">SERVICES WE OFFER ARE BELOW</h1>
+<h1 style="background-color: rgb(47, 160, 160);"><marquee direction="right" behavior="alternate">SERVICES WE OFFER ARE BELOW</marquee></h1>
 
-<section>
+<section id="services">
   <h2 style="background-color: rgb(64, 168, 168);">Our Services</h2>
 
   <div class="services">
     <div class="box">
       <h3 style="background-color: rgb(58, 175, 136);">📺 Used Electronics Sales</h3>
-      <img src="Images/02.jpg" alt="Fridges, TVs, washing machines and appliances">
+      <img src="images/02.jpg" alt="Fridges, TVs, washing machines and appliances">
       <p>Tested fridges, TVs, ACs, washing machines with warranty.</p>
     </div>
     <div class="box">
       <h3 style="background-color: rgb(56, 194, 148);">📱 Phones & Gadgets</h3>
-      <img src="Images/06.jpg" alt="Smartphones, tablets, laptops and smartwatches">
+      <img src="images/06.jpg" alt="Smartphones, tablets, laptops and smartwatches">
       <p>UK-used smartphones, tablets, laptops & smartwatches.</p>
     </div>
     <div class="box">
       <h3 style="background-color: rgb(60, 175, 137);">🎧 Phone Accessories</h3>
-      <img src="Images/05.jpg" alt="Chargers, power banks and cables">
+      <img src="images/05.jpg" alt="Chargers, power banks and cables">
       <p>Chargers, power banks, earpods, cases, speakers, cables.</p>
     </div>
     <div class="box">
       <h3 style="background-color: rgb(47, 146, 146);">🔧 Repairs</h3>
-      <img src="Images/04.jpg" alt="Phone repair at a workbench">
+      <img src="images/04.jpg" alt="Phone repair at a workbench">
       <p>Phone & laptop repairs - screen, battery, software, unlocking.</p>
     </div>
     <div class="box">
       <h3 style="background-color: aqua; color: black;">💰 We Buy Faulty Gadgets</h3>
-      <img src="Images/03.jpg" alt="Pile of old and faulty electronics">
+      <img src="images/03.jpg" alt="Pile of old and faulty electronics">
       <p>Sell your old/faulty phones & electronics for instant MoMo cash.</p>
     </div>
     <div class="box">
       <h3 style="background-color: aquamarine; color: black;">♻️ E-Waste Recycling</h3>
-      <img src="Images/07.jpg" alt="E-waste recycling facility">
+      <img src="images/07.jpg" alt="E-waste recycling facility">
       <p>We buy scrap electronics & cables - free pickup in Accra.</p>
     </div>
     <div class="box">
       <h3 style="background-color: rgb(58, 175, 136);">🔊 Speakers & Audio</h3>
-      <img src="Images/01.jpg" alt="Speakers and sound systems">
+      <img src="images/01.jpg" alt="Speakers and sound systems">
       <p>Bluetooth speakers, party speakers and home sound systems.</p>
     </div>
     <div class="box">
       <h3 style="background-color: rgb(56, 194, 148);">🎮 New Gadgets</h3>
-      <img src="Images/00.jpg" alt="Boxed gadgets, game controllers and networking gear">
+      <img src="images/00.jpg" alt="Boxed gadgets, game controllers and networking gear">
       <p>Game controllers, headsets, routers, cameras and more.</p>
     </div>
   </div>
 </section>
+
+<!-- ===== SERVICE GUIDE TABLE =====
+     <table>, <tr>, <th> (header cells) and <td> (data cells), with colspan and rowspan to merge cells. -->
+<h2 id="guide" style="background-color: rgb(64, 168, 168);">Service Guide</h2>
+<table>
+    <!-- Title row: colspan="3" stretches this header across all three columns -->
+    <tr>
+        <th colspan="3">What We Do For You</th>
+    </tr>
+
+    <!-- Column headers -->
+    <tr>
+        <th>Type</th>
+        <th>Service</th>
+        <th>Details</th>
+    </tr>
+
+    <!-- "Buy From Us" spans 5 rows (rowspan="5"), so the 4 rows below skip the Type cell -->
+    <tr>
+        <td rowspan="5">Buy From Us</td>
+        <td>Used Electronics Sales</td>
+        <td>Tested fridges, TVs, ACs, washing machines with warranty</td>
+    </tr>
+    <tr>
+        <td>Phones &amp; Gadgets</td>
+        <td>UK-used smartphones, tablets, laptops &amp; smartwatches</td>
+    </tr>
+    <tr>
+        <td>Phone Accessories</td>
+        <td>Chargers, power banks, earpods, cases, speakers, cables</td>
+    </tr>
+    <tr>
+        <td>Speakers &amp; Audio</td>
+        <td>Bluetooth speakers, party speakers and home sound systems</td>
+    </tr>
+    <tr>
+        <td>New Gadgets</td>
+        <td>Game controllers, headsets, routers, cameras and more</td>
+    </tr>
+
+    <!-- Repairs: a single row, so no rowspan needed -->
+    <tr>
+        <td>Fix</td>
+        <td>Repairs</td>
+        <td>Phone &amp; laptop repairs - screen, battery, software, unlocking</td>
+    </tr>
+
+    <!-- "Sell To Us" spans 2 rows -->
+    <tr>
+        <td rowspan="2">Sell To Us</td>
+        <td>We Buy Faulty Gadgets</td>
+        <td>Instant MoMo cash for old/faulty phones &amp; electronics</td>
+    </tr>
+    <tr>
+        <td>E-Waste Recycling</td>
+        <td>We buy scrap electronics &amp; cables - free pickup in Accra</td>
+    </tr>
+
+    <!-- Footer note merged across all 3 columns -->
+    <tr>
+        <td colspan="3"><i>All services are available in Accra.</i></td>
+    </tr>
+</table>
+<!-- ===== END SERVICE GUIDE TABLE ===== -->
+
+<!-- ===== BOOKING FORM =====
+     action = where the data goes ("#" = nowhere for now), method="post" = send data without showing it in the URL. -->
+<h2 id="booking" style="background-color: rgb(64, 168, 168);">Book a Service</h2>
+<form action="#" method="post">
+
+    <!-- Text input + label: "for" on the label matches "id" on the input -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="e.g. Ama Boateng" required>
+    <br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="text" id="phone" name="phone" placeholder="e.g. 0241234567" maxlength="10" required>
+    <br><br>
+
+    <!-- Password input: characters are hidden while typing -->
+    <label for="password">Create a Password (to track your booking):</label><br>
+    <input type="password" id="password" name="password" minlength="6" required>
+    <br><br>
+
+    <!-- Checkboxes: tick as many services as needed. Same "name", different "value" for each. -->
+    <p>Which service(s) do you need?</p>
+    <input type="checkbox" id="used" name="service" value="used-electronics">
+    <label for="used">Used Electronics Sales</label><br>
+
+    <input type="checkbox" id="gadgets" name="service" value="phones-gadgets">
+    <label for="gadgets">Phones &amp; Gadgets</label><br>
+
+    <input type="checkbox" id="accessories" name="service" value="accessories">
+    <label for="accessories">Phone Accessories</label><br>
+
+    <input type="checkbox" id="repairs" name="service" value="repairs">
+    <label for="repairs">Repairs</label><br>
+
+    <input type="checkbox" id="faulty" name="service" value="sell-faulty">
+    <label for="faulty">Sell Faulty Gadgets</label><br>
+
+    <input type="checkbox" id="ewaste" name="service" value="e-waste">
+    <label for="ewaste">E-Waste Pickup</label><br>
+
+    <input type="checkbox" id="audio" name="service" value="audio">
+    <label for="audio">Speakers &amp; Audio</label><br>
+
+    <input type="checkbox" id="new" name="service" value="new-gadgets">
+    <label for="new">New Gadgets</label>
+    <br><br>
+
+    <!-- "checked" = ticked by default -->
+    <input type="checkbox" id="callme" name="callme" value="yes" checked>
+    <label for="callme">Call me back to confirm</label>
+    <br><br>
+
+    <!-- Submit button sends the form -->
+    <input type="submit" value="Book Service">
+</form>
+<!-- ===== END BOOKING FORM ===== -->
+<br>
+<iframe src="https://www.google.com/maps?q=5.6712811,-0.1729348&output=embed" width="400" height="300" frameborder="0"></iframe>
+
 
 </body>
 </html>
